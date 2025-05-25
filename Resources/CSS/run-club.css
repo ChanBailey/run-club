@@ -127,6 +127,9 @@ h1 {
     border-radius: 15%;
 }
 
+
+
+
 .feedback {
     display: flex;
     flex-wrap: wrap;
@@ -151,16 +154,20 @@ h2 {
 }
 
 
+
+ 
  .testimonial p {
     background-color: #993833;
     color: white;
-    margin: 20px;
-    padding: 40px;
-    border-radius: 20%;
-    line-height: 1.4;
-    box-shadow: 10px 5px 5px #382F2F ;
+    margin: 10px;              /* smaller margin */
+    padding: 20px 25px;        /* reduce padding */
+    border-radius: 12px;       /* use px instead of % for better control */
+    box-shadow: 5px 3px 5px #382F2F;
+    line-height: 1.5;
     font-size: 1rem; 
-
+    word-wrap: break-word;     /* ensures long words wrap */
+    overflow-wrap: break-word; /* safety for breaking long words */
+    white-space: normal;       /* allow wrapping */
  }
 
 .goals {
